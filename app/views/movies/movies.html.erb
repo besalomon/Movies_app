@@ -1,0 +1,20 @@
+<table border = 1>
+
+	<tr>
+
+		<td> Title </td>
+		<td> Genre </td>
+		<td> Producer </td>
+		<td> Release Date </td>
+
+	</tr>
+	<% @display_all.each do |disp| %>	
+		<tr>
+		<td> <%= disp.title %> </td>
+		<td> <%= disp.genre %> </td>
+		<td> <%= disp.producer %> </td>
+		<td> <%= disp.release_date %> </td>
+		<% end %>
+	</tr>
+
+</table>
