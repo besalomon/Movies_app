@@ -1,10 +1,10 @@
 class MoviesController < ApplicationController
-	def movies
+	def movie
 		@display1 = Movie.first
 		render "movie.html.erb"
 	end
 
-	def all_movies
+	def movies
 		@display_all = Movie.all
 		render "movies.html.erb"
 	end
