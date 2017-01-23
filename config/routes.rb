@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-get "/movie", to:'movies#movie'
-get "/movies", to:'movies#movies'
+get "/movies/new", to:'movies#new'
+get "/movies/:id", to:'movies#show'
+get "/movies", to:'movies#index'
+post "/movies", to:'movies#create'
 end

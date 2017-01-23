@@ -1,0 +1,21 @@
+
+
+<%= form_tag"/movies", method: :post do %>
+
+<div>
+Title: <input type = "text" name = "title">
+</div>
+
+<div>
+Genre: <input type = "text" name = "genre">
+</div>
+<div>
+Producer: <input type = "text" name = "producer">
+</div>
+<div>
+Release Date: <input type = "text" name = "release_date">
+</div>
+<div>
+<input type = "submit" name = "submit" value = "Save">
+</div>
+<% end %>

@@ -8,13 +8,37 @@
 		<td> <b>Release Date</b> </td>
 
 	</tr>
-	<% @display_all.each do |disp| %>	
+	<% @movies.each do |movie| %>	
 		<tr>
-		<td> <%= disp.title %> </td>
-		<td> <%= disp.genre %> </td>
-		<td> <%= disp.producer %> </td>
-		<td> <%= disp.release_date %> </td>
+		<td> <%= movie.title %> </td>
+		<td> <%= movie.genre %> </td>
+		<td> <%= movie.producer %> </td>
+		<td> <%= movie.release_date %> </td>
 		<% end %>
 	</tr>
 
 </table>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
